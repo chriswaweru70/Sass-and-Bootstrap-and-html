@@ -1,0 +1,25 @@
+.btn{
+    float: left;
+}
+.btn-default{
+     @include add-background($secondary-color);
+     @include border-radius(12px);
+     
+}
+.btn-default:hover{
+      background:lighten($secondary-color, 20%)
+}
+.btn-default-different{
+     @include add-background($primary-color);
+     @include border-radius(12px);
+    
+}
+.btn-default-different:hover{
+      background:lighten($primary-color, 20%)
+}      
+.btn-primary{
+    @include add-background($primary-color)
+}
+.btn-primary:hover{
+      background:lighten($primary-color, 20%)
+}      

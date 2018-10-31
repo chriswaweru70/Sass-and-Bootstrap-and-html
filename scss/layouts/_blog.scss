@@ -1,0 +1,21 @@
+/* blog */
+
+.blog-post{
+    @include add-border(1px, $primary-color, top);
+    @include add-border(1px, $primary-color, right-left);
+    @include border-radius(12px);
+    padding: 15px;
+    h2.page-header{
+        margin-top: 5px !important;
+    }
+}
+.blog-featured{
+    float: left;
+    margin-right: 15px;
+}
+.post-meta{
+    background: #f3f3f3;
+    padding: 10px 10px 10px 10px;
+    @include add-border(1px, #cccccc, all);
+    margin: 15px 10px 10px 10px;
+}
